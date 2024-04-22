@@ -1,0 +1,5 @@
+{
+  "Welcome": "Welcome",
+  "Description": "This is an opinionated React boilerplate template that integrates Vite, React 18, Ant Design, TypeScript, Vitest, TailwindCSS 3, Eslint and other tools.",
+  "Begin": "Get started"
+}

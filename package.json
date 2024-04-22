@@ -1,0 +1,96 @@
+{
+  "name": "react-boilerplate",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "It's an opinionated React boilerplate.",
+  "author": {
+    "name": " Donavon Ye",
+    "email": "xxiaozhiyzj@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Donovan-Ye/react-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donovan-Ye/react-boilerplate.git"
+  },
+  "bugs": "https://github.com/Donovan-Ye/react-boilerplate/issues",
+  "keywords": [
+    "react",
+    "boilerplate",
+    "vite",
+    "typescript",
+    "eslint",
+    "prettier",
+    "tailwindcss",
+    "antd",
+    "zustand",
+    "vitest",
+    "simple-git-hooks",
+    "bumpp"
+  ],
+  "scripts": {
+    "build:dev": "vite build --mode production-dev",
+    "build:test": "vite build --mode production-test",
+    "build:prod": "vite build --mode production-prod",
+    "watchAndServe": "nodemon -w '.env*' -x vite serve",
+    "dev": "pnpm run watchAndServe --mode development-dev",
+    "serve:dev": "pnpm run dev",
+    "serve:dev-h": "pnpm run dev --host",
+    "serve:test": "pnpm run watchAndServe --mode development-test",
+    "serve:test-h": "pnpm run serve:test --host",
+    "serve:prod": "pnpm run watchAndServe --mode development-prod",
+    "test": "vitest",
+    "lint": "eslint src --max-warnings=0",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "bumpp": "bumpp"
+  },
+  "dependencies": {
+    "antd": "^5.13.1",
+    "classnames": "^2.5.1",
+    "i18next": "^23.11.2",
+    "i18next-browser-languagedetector": "^7.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.15.0",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/react": "^14.1.2",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitest/ui": "^1.1.3",
+    "autoprefixer": "^10.4.16",
+    "bumpp": "^9.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.13.1",
+    "happy-dom": "^12.10.3",
+    "lint-staged": "^15.2.0",
+    "nodemon": "^3.0.2",
+    "postcss": "^8.4.33",
+    "prettier": "3.1.1",
+    "simple-git-hooks": "^2.9.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-html": "^3.2.2",
+    "vite-tsconfig-paths": "^4.2.3",
+    "vitest": "^1.1.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "Welcome": "欢迎使用",
+  "Description": "这是一个集成了 Vite, React 18, Ant Design, TypeScript, Vitest, TailwindCSS 3, Eslint等工具的React主观模板。",
+  "Begin": "开始使用"
+}
